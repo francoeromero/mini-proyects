@@ -10,6 +10,10 @@
     
 </head>
 <body>
+    <div class="header">
+        <center><h2><strong> Calculadora </strong> </h2></center> 
+   </div>
+
     <div class="search-box">
         
         <input type="text" placeholder="Escribe un numero" name="" id="txtIdNumeroDos">
@@ -19,6 +23,7 @@
         </div>
        
     </div>
+    
 
     <div class="buttons">
         <button class="MiBotonUTNnav"  onclick="sumar()">
@@ -51,11 +56,11 @@
        
     </div>
 
-
     
 
+
   
-       
+    
 
 </div>
 
@@ -64,7 +69,7 @@
     <script>
         
 
-
+        //primer input
         const searchBtn = document.querySelector(".search-btn");
        
         const searchBox = document.querySelector(".search-box");
@@ -72,21 +77,16 @@
             searchBox.classList.add("active");
 
         }  
-
-
-
+        //segundo input
         const searchBtnbox = document.querySelector(".search-btn-box");
        
         const box = document.querySelector(".box");
         searchBtnbox.onclick = () =>{
             box.classList.add("active");
 
-        }  
+        }
 
-
-
-
-
+        //operaciones 
 
         function sumar()
 {	
