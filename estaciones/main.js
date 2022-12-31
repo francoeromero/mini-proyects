@@ -2,13 +2,17 @@ function mostrar()
 {
 	
 	let mes = document.getElementById("txtIdMes").value;
+
+    //background 
+    let elemento = document.getElementById("miElemento");
 	
 	switch (mes){
 
         case "Marzo" :
 		case "Abril":
 		case "Mayo" :
-			alert("Arrancamos con el frio");
+			// alert("Arrancamos con el frio");
+            elemento.style.backgroundColor = "red";
 			break;
 
 		case "Junio":
@@ -28,6 +32,7 @@ function mostrar()
 		case "Enero":
 		case "Febrero":
 			alert("Ya pasamos el frio, ahora hace calor!!!.");
+            
 			break;
 	}
 }

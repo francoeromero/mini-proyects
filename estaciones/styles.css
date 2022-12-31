@@ -14,3 +14,11 @@ body {
     background-attachment: fixed;
 }
 
+#miElemento{
+    height: 100vh;
+    background-color: blue;
+    z-index: -10;
+    transition: 2s;
+    
+}
+
