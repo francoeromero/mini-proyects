@@ -13,28 +13,43 @@ function mostrar()
 		case "Mayo" :
 			// alert("Arrancamos con el frio");
             // elemento.style.backgroundColor = "red";
-            elemento.style.backgroundImage = "url(https://www.dzoom.org.es/wp-content/uploads/2018/10/foto-otono-1.jpg)";
+            elemento.style.backgroundImage = "url(https://www.yatecuento.com.ar/storage/Noticias/11653/5ed809ad4aa1aOTONO.jpg)"
             elemento.style.backgroundPosition = "center center";
+            elemento.style.backgroundRepeat = "no-repeat";
+            elemento.style.backgroundSize = "cover";
+            elemento.style.backgroundAttachment = "fixed";
 			break;
 
 		case "Junio":
 		case "Julio":
 		case "Agosto":
 			// alert("Hace mucho frio!!");
-            elemento.style.backgroundImage = "url(https://media.istockphoto.com/id/1140829787/es/foto/sunset-en-savannah-plains.jpg?b=1&s=612x612&w=0&k=20&c=Xii4-SeUmyDUcJbnCeB1NycueCtnSkzqDd1AUB1Zxoo=)"
+            elemento.style.backgroundImage = "url(https://la100.cienradios.com/resizer/E4xOFUAHd90dtBIrA0J4XoBrxgI=/arc-photo-radiomitre/arc2-prod/public/HLYFZFJEENFRXNZB4V7ZEOWSH4.jpg)"
+            elemento.style.backgroundPosition = "center center";
+            elemento.style.backgroundRepeat = "no-repeat";
+            elemento.style.backgroundSize = "cover";
+            elemento.style.backgroundAttachment = "fixed";
 			break;
 
 		case "Septiembre" :
 		case "Octubre" :
 		case "Noviembre" :
 	
-            alert("Comienzan a nacer las flores, Primavera!!")
+        elemento.style.backgroundImage = "url(https://www.buenosaires.gob.ar/sites/gcaba/files/field/image/dsc_0136.jpg)"
+        elemento.style.backgroundPosition = "center center";
+        elemento.style.backgroundRepeat = "no-repeat";
+        elemento.style.backgroundSize = "cover";
+        elemento.style.backgroundAttachment = "fixed";
             break;
 
         case "Diciembre" :
 		case "Enero":
 		case "Febrero":
-			alert("Ya pasamos el frio, ahora hace calor!!!.");
+            elemento.style.backgroundImage = "url(https://www.buenosaires.gob.ar/sites/gcaba/files/field/image/baplaya-pdn-27_1_0.jpg)"
+            elemento.style.backgroundPosition = "center center";
+            elemento.style.backgroundRepeat = "no-repeat";
+            elemento.style.backgroundSize = "cover";
+            elemento.style.backgroundAttachment = "fixed";
             
 			break;
 	}
