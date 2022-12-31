@@ -16,9 +16,18 @@ body {
 
 #miElemento{
     height: 100vh;
-    background-color: blue;
+    /* background-color: blue; */
     z-index: -10;
-    transition: 2s;
-    
+    transition: 3s;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpWVJuwj0_EBh3kQ4LMGDXV8Eoscn0E43Keg&usqp=CAU);
+   
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
 }
 
