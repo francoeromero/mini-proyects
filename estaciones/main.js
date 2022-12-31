@@ -18,6 +18,7 @@ function mostrar()
             elemento.style.backgroundRepeat = "no-repeat";
             elemento.style.backgroundSize = "cover";
             elemento.style.backgroundAttachment = "fixed";
+            elemento.style.transition = "3s";
 			break;
 
 		case "Junio":
@@ -29,6 +30,7 @@ function mostrar()
             elemento.style.backgroundRepeat = "no-repeat";
             elemento.style.backgroundSize = "cover";
             elemento.style.backgroundAttachment = "fixed";
+            elemento.style.transition = "3s";
 			break;
 
 		case "Septiembre" :
@@ -40,6 +42,7 @@ function mostrar()
         elemento.style.backgroundRepeat = "no-repeat";
         elemento.style.backgroundSize = "cover";
         elemento.style.backgroundAttachment = "fixed";
+        elemento.style.transition = "3s";
             break;
 
         case "Diciembre" :
@@ -50,6 +53,7 @@ function mostrar()
             elemento.style.backgroundRepeat = "no-repeat";
             elemento.style.backgroundSize = "cover";
             elemento.style.backgroundAttachment = "fixed";
+            elemento.style.transition = "3s";
 			break;
 	}
 }
