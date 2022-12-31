@@ -20,6 +20,10 @@ body {
     z-index: -10;
     transition: 3s;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpWVJuwj0_EBh3kQ4LMGDXV8Eoscn0E43Keg&usqp=CAU);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
    
 }
 
@@ -30,4 +34,6 @@ body {
     flex-direction: column;
     height: 80%;
 }
+
+
 

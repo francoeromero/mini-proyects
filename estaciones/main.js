@@ -50,7 +50,6 @@ function mostrar()
             elemento.style.backgroundRepeat = "no-repeat";
             elemento.style.backgroundSize = "cover";
             elemento.style.backgroundAttachment = "fixed";
-            
 			break;
 	}
 }
