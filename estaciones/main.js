@@ -1,10 +1,10 @@
 function mostrar()
 {
 	
-	let mes = document.getElementById("txtIdMes").value;
+	let mes = document.getElementById("selectfield").value;
 
     //background 
-    let elemento = document.getElementById("miElemento");
+    let elemento = document.getElementById("hero");
 	
 	switch (mes){
 
@@ -12,13 +12,13 @@ function mostrar()
 		case "Abril":
 		case "Mayo" :
 			// alert("Arrancamos con el frio");
-            // elemento.style.backgroundColor = "red";
-            elemento.style.backgroundImage = "url(https://www.yatecuento.com.ar/storage/Noticias/11653/5ed809ad4aa1aOTONO.jpg)"
-            elemento.style.backgroundPosition = "center center";
-            elemento.style.backgroundRepeat = "no-repeat";
-            elemento.style.backgroundSize = "cover";
-            elemento.style.backgroundAttachment = "fixed";
-            elemento.style.transition = "3s";
+            //  elemento.style.backgroundColor = "red";
+            elemento.style.backgroundImage = "red";
+            // elemento.style.backgroundPosition = "center center";
+            // elemento.style.backgroundRepeat = "no-repeat";
+            // elemento.style.backgroundSize = "cover";
+            // elemento.style.backgroundAttachment = "fixed";
+            // elemento.style.transition = "3s";
 			break;
 
 		case "Junio":

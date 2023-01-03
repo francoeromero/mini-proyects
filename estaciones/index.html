@@ -18,19 +18,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-<div id="miElemento">
+
+
+<!-- <div id="miElemento">
 
 
 
 
-   <h2 class="titulo"><strong> Estaciones de Argentina</strong> </h2>
+   <h2 class="titulo"><strong> Estaciones de Argentina</strong> </h2> -->
 
-
+<!-- 
    	<div class="hero">
-		<form class="selector"> <!-- form -->
-		<h3>Elija un mes</h3>
+		<form class="selector"> 
+		
 					<select id ="txtIdMes">
+						<div id="selectField">
+							<option value="#">Elige un mes</option>
+							<img src="/estaciones/icon/flecha.png">
+						</div>
 						<option value="Enero">Enero</option>
+						<img src="/estaciones/icon/flecha.png" alt="">
 						<option value="Febrero">Febrero</option>
 						<option value="Marzo">Marzo</option>
 						<option value="Abril">Abril</option>
@@ -44,17 +51,91 @@
 						<option value="Diciembre">Diciembre</option>
 				</select>
 
-			
+			<a class="MiBotonUTNnav"  onclick="mostrar()" >Mostrar</a>
+	</div> -->
 
+
+	<div id="hero">
+		<div class="selector">
+			<div id="selectfield">
+				<p>Eliga una estacion</p>
+				<img src="/estaciones/icon/flecha.png">
+			</div>
+
+			<ul id="list">
+
+				<li class="options">
+					<img src="/estaciones/icon/verano.png">
+					<option value="Enero">Enero</option>
+				</li>
+
+				<li class="options">
+					<img src="/estaciones/icon/verano.png">
+					<option value="Febrero">Febrero</option>
+				</li>
+
+				<li class="options"> 
+					<img src="/estaciones/icon/otoño.png">
+					<option value="Marzo">Marzo</option>
+				</li>
+
+				<li class="options">
+					<img src="/estaciones/icon/otoño.png">
+					<option value="Abril">Abril</option>
+				</li>
+
+				<li class="options">
+					<img src="/estaciones/icon/otoño.png">
+					<option value="Mayo">Mayo</option>
+				</li>
+
+				<li class="options">
+					<img src="/estaciones/icon/invierno.png">
+					<option value="Junio">Junio</option>
+				</li>
+
+				<li class="options">
+					<img src="/estaciones/icon/invierno.png">
+					<option value="Julio">Julio</option>
+				</li>
+
+				<li class="options">
+					<img src="/estaciones/icon/invierno.png">
+					<option value="Agosto">Agosto</option>
+				</li>
+
+				<li class="options">
+					<img src="/estaciones/icon/primavera.png">
+					<option value="Septiembre">Septiembre</option>
+				</li>
+
+				<li class="options">
+					<img src="/estaciones/icon/primavera.png">
+					<option value="Octubre">Octubre</option>
+				</li>
+
+				<li class="options">
+					<img src="/estaciones/icon/primavera.png">
+					<option value="Noviembre">Noviembre</option>
+				</li>
+
+				<li class="options">
+					<img src="/estaciones/icon/verano.png">
+					<option value="Diciembre">Diciembre</option>
+				</li>
+
+			</ul>
+		</div>
 	</div>
+	<a class="MiBotonUTNnav"  onclick="mostrar()" >Mostrar</a>
 
 		
-			<a class="MiBotonUTNnav"  onclick="mostrar()" >Mostrar</a>
+<!-- 			
 
 	    </form>				
    
 </div>
 
- 
+  -->
 </body>
 </html>
