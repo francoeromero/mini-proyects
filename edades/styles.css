@@ -72,3 +72,10 @@ h1 {
     letter-spacing: 10px;
     margin-bottom: 30px;
 }
+
+.resultado  {
+    width: 600px;
+    background: none;
+    border: none;
+    font-size: 30px;
+}

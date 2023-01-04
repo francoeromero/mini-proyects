@@ -28,10 +28,15 @@ function mostrar()
             document.getElementById("txtIdResultado").value = resultado;
 		}
 	
-		else {
+		else if (edad < 100) {
             resultado = "Usted es un jubilado o jubilada";
             document.getElementById("txtIdResultado").value = resultado;
 		}
+
+        else{
+            resultado = "No ha ingresado un número correcto";
+            document.getElementById("txtIdResultado").value = resultado;
+        }
 
         document.getElementById("txtIdEdad").value = "";
         
