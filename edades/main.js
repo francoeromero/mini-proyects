@@ -2,28 +2,37 @@ function mostrar()
 {
 	//pido espacio de memoria 
 
-	let edad;
+	
 
 	//asigno al id input
-	edad = parseInt(document.getElementById("txtIdEdad").value);
+	let edad = parseInt(document.getElementById("txtIdEdad").value);
+    let resultado;
 
 	//hago las sentencias
 
 	if(edad <= 5){
-		alert("bebé");
+        resultado = "Eres un bebé";
+        document.getElementById("txtIdResultado").value = resultado;
 	}
         else if (edad < 13){
-            alert("niño");
+            resultado = "Eres un niño o niña";
+            document.getElementById("txtIdResultado").value = resultado;
         }
 		else if (edad < 18){
-			alert("adolescente");
+            resultado = "Eres un Joven";
+            document.getElementById("txtIdResultado").value = resultado;
 		}
 
 		else if (edad < 65){
-			alert("Adulto")
+            resultado = "Eres un Adulto";
+            document.getElementById("txtIdResultado").value = resultado;
 		}
 	
 		else {
-			alert("Anciano");
+            resultado = "Usted es un jubilado o jubilada";
+            document.getElementById("txtIdResultado").value = resultado;
 		}
+
+        document.getElementById("txtIdEdad").value = "";
+        
 }
