@@ -34,7 +34,7 @@ function mostrar()
 		}
 
         else{
-            resultado = "No ha ingresado un número correcto";
+            resultado = "No ha ingresado un número o edad correcta";
             document.getElementById("txtIdResultado").value = resultado;
         }
 
