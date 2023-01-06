@@ -14,29 +14,38 @@ switch(estacion){
                 resultado = ("El precio es " + preciofinal + " con su aumento del 20% Bariloche SWITCH");
                 document.getElementById("resultado").value = resultado;
 			} 
-            
+
 			else if (destino == "Cataratas" || destino == "Cordoba"){
 				preciofinal = (PRECIO * 0.1) + PRECIO;
-				alert("El precio es " + preciofinal + " con su aumento del 10% Cataratas Cordoba  SWITCH");
+                resultado = ("El precio es " + preciofinal + " con su aumento del 10% Cataratas Cordoba  SWITCH");
+                document.getElementById("resultado").value = resultado;
+
 			}
 			else {
 				preciofinal = PRECIO - (PRECIO * 0.2) ;
-				alert("El precio es " + preciofinal + " con su descuento del 20% incluido Mar del plata  SWITCH");
+				resultado = ("El precio es " + preciofinal + " con su descuento del 20% incluido Mar del plata  SWITCH");
+                document.getElementById("resultado").value = resultado;
 			}
 		break;
 
 		case "Verano":
 			if(destino == "Bariloche"){
 				preciofinal = PRECIO - (PRECIO * 0.2);
-				alert("El precio es " + preciofinal + " con su descuento del 20%  SWITCH");
+				resultado = ("El precio es " + preciofinal + " con su descuento del 20%  SWITCH");
+                document.getElementById("resultado").value = resultado;
+
 			}
 			else if (destino == "Cataratas" || destino == "Cordoba"){
 				preciofinal = PRECIO - (PRECIO * 0.1);
-				alert("El precio es " + preciofinal + " con su descuento del 10%  SWITCH")
+				resultado = ("El precio es " + preciofinal + " con su descuento del 10%  SWITCH")
+                document.getElementById("resultado").value = resultado;
+
 			}
 			else{
 				preciofinal = PRECIO + (PRECIO * 0.2);
-				alert("El precio es " + preciofinal + " con su aumento del 20%  SWITCH");
+				resultado = ("El precio es " + preciofinal + " con su aumento del 20%  SWITCH");
+                document.getElementById("resultado").value = resultado;
+
 			}
 
 		break;
@@ -45,10 +54,14 @@ switch(estacion){
 		case "Primavera":
 			if(destino == "Cataratas" || destino == "Mar del plata"){
 				preciofinal = PRECIO + (PRECIO * 0.1);
-				alert("El precio es " + preciofinal + " con su aumento del 10%  SWITCH");
+				resultado = ("El precio es " + preciofinal + " con su aumento del 10%  SWITCH");
+                document.getElementById("resultado").value = resultado;
+
 			}
 			else {
-				alert("El precio es " + PRECIO +  " sin descuento  SWITCH");
+				resultado = ("El precio es " + PRECIO +  " sin descuento  SWITCH");
+                document.getElementById("resultado").value = resultado;
+
 			}
 		break;
 		}
