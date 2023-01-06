@@ -54,12 +54,12 @@ switch(estacion){
 		case "Primavera":
 			if(destino == "Cataratas" || destino == "Mar del plata"){
 				preciofinal = PRECIO + (PRECIO * 0.1);
-				resultado = ("El precio es " + preciofinal + " con su aumento del 10%  SWITCH");
+				resultado = ("El precio es " + preciofinal + " con su aumento del 10% ");
                 document.getElementById("resultado").value = resultado;
 
 			}
 			else {
-				resultado = ("El precio es " + PRECIO +  " sin descuento  SWITCH");
+				resultado = ("El precio es " + PRECIO +  " sin descuento ");
                 document.getElementById("resultado").value = resultado;
 
 			}
