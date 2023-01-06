@@ -2,6 +2,7 @@ function mostrar()
 {
 	const PRECIO = 15000;
 	let preciofinal;
+    let resultado;
 
 	let estacion = document.getElementById("txtIdEstacion").value;
 	let destino = document.getElementById("txtIdDestino").value;
@@ -10,8 +11,10 @@ switch(estacion){
 		case "Invierno":
 			if(destino == "Bariloche"){
 				preciofinal = (PRECIO * 0.2) + PRECIO;
-				alert("El precio es " + preciofinal + " con su aumento del 20% Bariloche SWITCH");
+                resultado = ("El precio es " + preciofinal + " con su aumento del 20% Bariloche SWITCH");
+                document.getElementById("resultado").value = resultado;
 			} 
+            
 			else if (destino == "Cataratas" || destino == "Cordoba"){
 				preciofinal = (PRECIO * 0.1) + PRECIO;
 				alert("El precio es " + preciofinal + " con su aumento del 10% Cataratas Cordoba  SWITCH");
