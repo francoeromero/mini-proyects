@@ -64,6 +64,7 @@
 
 </div>
 
+<input type="text"  id="mostrar" disabled>
     
 
     <script>
@@ -94,6 +95,7 @@
 	let num1;
 	let num2;
 	let resultado;
+	let mostrar;
 
 	//asigno el valor alas variables y transformo de string a number
 	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
@@ -104,7 +106,8 @@
 
 	//muestro el valor en pantalla
 
-	alert("El resultado es " + resultado);
+	mostrar = ("El resultado es " + resultado);
+	document.getElementById("mostrar").value = mostrar;
 
 	//limpio las entradas para una nueva operacion
 	document.getElementById("txtIdNumeroUno").value = "";
@@ -128,7 +131,8 @@ function restar()
 	resultado = num1 - num2;
 
 	//muestro en resultado en la pantalla
-	alert("El resultado es " + resultado)
+	mostrar = ("El resultado es " + resultado);
+	document.getElementById("mostrar").value = mostrar;
 
 	//limpio las entradas para una nueva operacion
 	document.getElementById("txtIdNumeroUno").value = "";
@@ -150,7 +154,8 @@ function multiplicar()
 	resultado = num1 * num2;
 
 	//muestro en resultado en la pantalla
-	alert("El resultado es " + resultado)
+	mostrar = ("El resultado es " + resultado);
+	document.getElementById("mostrar").value = mostrar;
 	//limpio las entradas para una nueva operacion
 	document.getElementById("txtIdNumeroUno").value = "";
 	document.getElementById("txtIdNumeroDos").value = "";
@@ -171,7 +176,8 @@ function dividir()
 	resultado = num1 / num2;
 
 	//muestro en resultado en la pantalla
-	alert("El resultado es " + resultado)
+	mostrar = ("El resultado es " + resultado);
+	document.getElementById("mostrar").value = mostrar;
 	//limpio las entradas para una nueva operacion
 	document.getElementById("txtIdNumeroUno").value = "";
 	document.getElementById("txtIdNumeroDos").value = "";

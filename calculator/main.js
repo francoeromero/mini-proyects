@@ -27,6 +27,7 @@
 let num1;
 let num2;
 let resultado;
+let mostrar;
 
 //asigno el valor alas variables y transformo de string a number
 num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
@@ -37,7 +38,8 @@ resultado = num1 + num2;
 
 //muestro el valor en pantalla
 
-alert("El resultado es " + resultado);
+mostrar = ("El resultado es " + resultado);
+document.getElementById("mostrar") = mostrar;
 
 //limpio las entradas para una nueva operacion
 document.getElementById("txtIdNumeroUno").value = "";

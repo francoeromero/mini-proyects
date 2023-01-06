@@ -18,7 +18,7 @@ html,body{
     height: 60px;
     width: 60px;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    margin-bottom: -250px;
+    margin-bottom: -200px;
 }
 
 .search-box.active {
@@ -71,7 +71,7 @@ html,body{
     height: 60px;
     width: 60px;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    margin-top: -250px;
+    margin-top: -200px;
 }
 
 .box.active {
@@ -128,4 +128,40 @@ button:hover{
 
 button:active{
     background: red;
+}
+
+#mostrar{
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+    width: 100vh;
+    color: black;
+    
+}
+
+.buttons{
+  
+}
+
+.MiBotonUTNnav {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1000px){
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box{
+        margin-bottom: -100px;
+    }
+    .search-box{
+        margin-top: -70px;
+    }
+    .header{
+        margin-top: 20px;
+    }
 }
