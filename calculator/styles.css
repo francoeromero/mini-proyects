@@ -71,7 +71,7 @@ html,body{
     height: 60px;
     width: 60px;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    margin-top: -200px;
+    margin-top: -160px;
 }
 
 .box.active {
@@ -153,6 +153,7 @@ button:active{
     .buttons{
         display: flex;
         flex-direction: column;
+        margin-left: 35px;
     }
 
     .box{
@@ -164,4 +165,5 @@ button:active{
     .header{
         margin-top: 20px;
     }
+    
 }
