@@ -10,30 +10,71 @@
 </head>
 <body>
     <div class="contenedor">
-        <!-- titulo y descripcion -->
-        <div class="titulo">
-            <h2>Mi portafolio</h2>
-            <p>algunos de mis trabajos</p>
-        </div>
-        <!-- fin titulo y descripcion -->
-       
-        <!-- El buscador -->
-        <form>
-            <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar proyecto">
-        </form>
-        <!-- fin del buscador -->
-
-        <!-- enlaces de categorias -->
-
-        <div class="categorias" id="categorias">
-            <a href="#" class="activo">Todos</a>
-            <a href="#">Arquitectura</a>
-            <a href="#">Programación</a>
-            <a href="#">Arte 3D</a>
-        </div>
-        <!-- fin enlaces de categorias -->
-
+        <header>
+            <!-- titulo y descripcion -->
+            <div class="logo">
+                <h2>Mi portafolio</h2>
+                <p>algunos de mis trabajos</p>
+            </div>
+            <!-- fin titulo y descripcion -->
         
+            <!-- El buscador -->
+            <form>
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar proyecto">
+            </form>
+            <!-- fin del buscador -->
+
+            <!-- enlaces de categorias -->
+
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Arquitectura</a>
+                <a href="#">Programación</a>
+                <a href="#">Arte 3D</a>
+            </div>
+            <!-- fin enlaces de categorias -->
+        </header>
+
+        <section class="grid" id="grid">
+
+
+            <div class="item"
+                data-categoria="Arquitectura"
+                data-etiquetas="arquitectura casa edificio obra arquitectonico"
+                >
+                <div class="item-contenido">
+                    <img src="/galeriasEnlaces/img/arq1.jpg" width="500px">
+                </div>
+            </div>
+
+            <div class="item"
+                data-categoria="Arquitectura"
+                data-etiquetas="arquitectura casa edificio obra arquitectonico"
+                >
+                <div class="item-contenido">
+                    <img src="/galeriasEnlaces/img/arq1.jpg" width="500px">
+                </div>
+            </div>
+
+            <div class="item"
+                data-categoria="Arquitectura"
+                data-etiquetas="arquitectura casa edificio obra arquitectonico"
+                >
+                <div class="item-contenido">
+                    <img src="/galeriasEnlaces/img/arq1.jpg" width="500px">
+                </div>
+            </div>
+
+
+        </section>
+
     </div>
+
+
+   
+	 			
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="/galeriasEnlaces/main.js"></script>
 </body>
 </html>
