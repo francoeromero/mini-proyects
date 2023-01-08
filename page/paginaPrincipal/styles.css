@@ -101,3 +101,25 @@ header .categorias a.activo {
 .grid.imagenes-cargadas {
     opacity: 1; /*PARA QUE APARESCAN LAS IMAGENES */
 }
+
+
+/* seleccionamos el contenedor item que contiene todas las imagenes */
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	/* utilizo calc, que es calcular el 33% de ancho menos 20px  para que entren 3 imagenes enfilados*/
+	width: calc(33.333333% - 20px); 
+}
+/* esto lo pide MUURI el contenido mas cerca de las imagenes sea relative */
+.grid .item-contenido {
+	position: relative;
+}
+/* seleccionamos las imagenes especificamente */
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+	/* sacar el margen por defecto que tiene las imagenes */
+	vertical-align: top; 
+}
