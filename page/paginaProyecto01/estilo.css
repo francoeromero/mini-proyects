@@ -190,6 +190,24 @@ body{
     .gallery_item:nth-child(8){}
     .gallery_item:nth-child(9){}
 
+
+    .last-text{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .last-text p{
+        text-align: center;
+        padding: 15px;
+        color: var(--second-color);
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
     @media (max-width: 970px){
         /* Titulo y descripcion */
         .gallery_item:nth-child(1){
