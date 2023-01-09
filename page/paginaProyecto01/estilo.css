@@ -32,7 +32,7 @@
 	z-index: 1000;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	background: transparent;
 	padding: 22px 16%;
 	border-bottom: 1px solid transparent;
