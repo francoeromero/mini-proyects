@@ -54,6 +54,10 @@ body {
 	font-size: var(--h2-font);
 }
 
+.logo p{
+	color: var(--main-color);
+}
+
 .logo img{
 	width: 205px;
 	height: auto;
@@ -443,7 +447,7 @@ header .categorias a.activo {
 	color: var(--main-color);
 }
 .contact-icons{
-	scale: 1.4;
+	scale: 1.6;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -459,7 +463,7 @@ header .categorias a.activo {
 	align-items: center;
 	justify-content: center;
 	font-size: 18px;
-	margin-right: 10px;
+	margin-right: 20px;
 	transition: all .40s ease;
 	
 }
@@ -515,4 +519,80 @@ form textarea{
 	font-size: 15px;
 	font-weight: 600;
 	letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1325px){
+	#header{
+		padding: 16px 3%;
+	}
+	#header.sticky{
+		padding: 8px 3%;
+	}
+	#section{
+		padding: 130px 3% 60px;
+	}
+
+	.services-content{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 970px){
+	:root{
+		--h1-font: 4.2rem;
+	  --h2-font: 2.9rem;
+	  --p-font: 1rem;
+	}
+	section{
+		padding: 70px 3% 60px;
+	}
+	.home{
+		height: 85vh;
+	}
+	.about{
+		grid-template-columns: 1fr;
+	}
+	.about-img{
+		text-align: center;
+	}
+	.contact{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 830px){
+	#menu-icon{
+		display: block;
+	}
+	.navbar{
+		position: absolute;
+		top: -600px;
+		right: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		background: #12141c;
+		text-align: left;
+		transition: all .40s ease;
+	}
+	.navbar a{
+		display: block;
+		padding: 1rem;
+		margin: 1rem;
+	}
+	.navbar.active{
+		top: 100%;
+	}
+	:root{
+		--h1-font: 3.7rem;
+	  --h2-font: 2.7rem;
+	}
 }
