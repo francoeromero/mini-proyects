@@ -103,16 +103,17 @@ section{
 	background-position: center;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
     /* margin-left: 300px; */
 }
+
 .home-text h1{
 	margin: 20px 0;
 	font-size: var(--h1-font);
 	font-weight: bold;
 	line-height: 1.1;
 	letter-spacing: 2px;
-
+	
 }
 
 
