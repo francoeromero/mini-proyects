@@ -7,11 +7,11 @@
 }
 
 #background {
-    background: rgb(255, 255, 255);
+    background: #92ba93;
     height: 100vh;
 }
 
-h1 {
+#titulo {
     padding-top: 150px;
     margin-bottom: -240px;
     text-align: center;
@@ -66,27 +66,28 @@ h1 {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(54, 181, 12, 0.4));
     border-radius: 50%;
     height: 40px;
+    width: 40px;
     padding: 10px;
     margin: 30px;
     display: flex;
     align-items: center;
     cursor: pointer;
     -webkit-user-select: none;
-   
-
+    transition: background 0.3s ease; /* Agrega una transición de fondo */
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+    scale: 1.5;
 }
 
-.boton:hover{
+.boton:hover {
     background: linear-gradient(rgba(177, 83, 15, 0.4), rgba(56, 34, 201, 0.4));
-   
 }
 
 .boton:active {
-    scale: 0.9;
- 
+    transform: scale(0.9); /* Utiliza una unidad de medida para la escala */
 }
 
 b {
+   font-size: 12px;
     background: none;
 
 }
