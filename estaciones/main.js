@@ -2,6 +2,28 @@ function mostrar()
 {
 	//tomo el mes
 	let mes = document.getElementById("txtIdMes").value; // var mesDelAño =txtIdMes.value;
+
+    //titulo
+
+    let titulo = document.getElementById("titulo");
+        if(mes == "Marzo" || mes == "Abril" || mes == "Mayo"){
+            titulo.style.color = "white";
+            titulo.style.transition = "3s";
+        }
+        else if (mes == "Junio" || mes == "Julio" || mes == "Agosto"){
+            titulo.style.color = "#333333";
+            titulo.style.transition = "3s";
+        }
+        else if (mes == "Septiembre" || mes == "Octubre" || mes == "Noviembre"){
+            titulo.style.color = "black";
+            titulo.style.textShadow = " #353a36"
+            titulo.style.transition = "3s";
+        }
+        else {
+            titulo.style.color = "black";
+            titulo.style.textShadow = " #353a36"
+            titulo.style.transition = "3s";
+        }
 	
 //background 
 let elemento = document.getElementById("background");

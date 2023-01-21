@@ -7,8 +7,16 @@
 }
 
 #background {
-    background: rgb(170, 170, 170);
+    background: rgb(255, 255, 255);
     height: 100vh;
+}
+
+h1 {
+    padding-top: 150px;
+    margin-bottom: -240px;
+    text-align: center;
+    font-size: 3em;
+    color: #353a36;
 }
 
 #form {
@@ -32,6 +40,7 @@
     cursor: pointer;
     border-radius: 5px ;
     width: 200px;
+    
 
     appearance: none;
     -webkit-appearance: none;
@@ -44,7 +53,7 @@
     letter-spacing: 8px;
     font-weight: bold;
     font-size: 17px;
-    box-shadow: 1px 1px 10px 7px ;
+    box-shadow: 1px 1px 5px px ;
 }
 
 .select option {
@@ -54,7 +63,7 @@
 
 
 .boton {
-    background: linear-gradient(rgba(169, 56, 56, 0.4), rgba(54, 181, 12, 0.4));
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(54, 181, 12, 0.4));
     border-radius: 50%;
     height: 40px;
     padding: 10px;
