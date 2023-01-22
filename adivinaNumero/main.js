@@ -1,6 +1,8 @@
 const comenzar = () =>{
 
     numSecreto = Math.floor(Math.random() * (100 - 1 + 1)) + 1; //ambito global sin let o const
+    let boton = document.getElementById("comenzar");
+    boton.style.backgroundColor = "#852626";
     
   }
   
