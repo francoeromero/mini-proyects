@@ -21,8 +21,20 @@ function addNote() {
   const note = noteInput.value;
   if (note) {
     const noteElement = document.createElement("p");
-    noteElement.innerText = note;
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.classList.add("task-checkbox");
+    noteElement.appendChild(checkbox);
+    noteElement.appendChild(document.createTextNode(note));
     notesContainer.appendChild(noteElement);
     noteInput.value = "";
+
+    checkbox.addEventListener("change", (event) => {
+      if (event.target.checked) {
+        noteElement.classList.add("completed");
+      } else {
+        noteElement.classList.remove("completed");
+      }
+    });
   }
 }
