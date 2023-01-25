@@ -1,18 +1,53 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    padding:10px;
+    margin:10px;
   }
   
-  h1{
-    text-align: center;
-  }
-
   form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
-    text-align: center;
+  }
+  
+  input[type="text"] {
+    padding: 0.5em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    margin-right: 1em;
+  }
+  
+  button[id="add-button"] {
+    padding: 0.5em 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[id="add-button"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  p {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .container {
+    background-color: #f1f1f1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   #notes-container {
-    background-color: #fff;
-    padding: 10px;
+    padding:10px;
   }
