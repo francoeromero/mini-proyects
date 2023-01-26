@@ -144,12 +144,21 @@ button:active{
   
 }
 
-.MiBotonUTNnav {
+.boton {
     margin-top: 20px;
 }
 
 
 @media (max-width: 1000px){
+   h2 {
+    margin-top: -10px;
+   }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
     .buttons{
         display: flex;
         flex-direction: column;
