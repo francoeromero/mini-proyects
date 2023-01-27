@@ -54,16 +54,12 @@ html,body{
     cursor: pointer;
 }
 
-
-
 .header {
     position: fixed;
     top: 0;
     margin-top: 100px;
     margin-left: 0px;
 }
-
-
 
 
 .box {
@@ -107,9 +103,6 @@ html,body{
     cursor: pointer;
 }
 
-.modal {
-    background-color: ;
-  }
 
 button {
     border-radius: 30px;
@@ -140,9 +133,6 @@ button:active{
     
 }
 
-.buttons{
-  
-}
 
 .boton {
     margin-top: 20px;
