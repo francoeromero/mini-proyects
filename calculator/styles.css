@@ -143,7 +143,7 @@ button:active{
    h2 {
     margin-top: -10px;
    }
-    body {
+    html {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
