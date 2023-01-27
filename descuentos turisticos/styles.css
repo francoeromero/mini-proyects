@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: #ededed;
     background-image: url("bg-image.jpg");
     background-size: cover;
     display: flex;
@@ -51,7 +51,7 @@ select {
 
 option {
   margin: 30px;
-  background: red;
+  background: #5b5a5a;
   padding: 20px;
 
 }
@@ -78,5 +78,5 @@ option {
     padding: 10px;
     border: 1px solid #00bfff;
     margin-top: 20px;
-    width: 50%;
+    width: 60%;
 }
