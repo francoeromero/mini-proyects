@@ -1,7 +1,20 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+	--bg-color: #020312;
+	--text-color: #fff;
+	--main-color: #eb4a4a;
+	--second-color: gray;
+	--other-color: #12141c;
+	--h1-font: 5.2rem;
+	--h2-font: 3.5rem;
+	--p-font: 1.1rem;
 }
 
 .container .box{
@@ -12,15 +25,17 @@
     grid-template-rows: 1fr 1fr;
     grid-gap: 5px;
     min-height: 100vh;
-    width: 100%;
+    width: 80%;
 }
 
+/* contenedor del video de youtube y la descripcion */
 .container .box video {
     position: relative;
     width: 50%;
     height: 50vh;
     filter: grayscale(1);
-    border: 4px solid rgb(255, 0, 0);
+   
+
     width: 100%;
     object-fit: cover;
     transition: 0.5s;
@@ -32,14 +47,58 @@
     filter: grayscale(0);
 }
 
-/* //video  */
 
+
+/* _________________________________________ */
+/* APARTIR DE ACA ES CUANDO SE ABRE EL VIDEO DE YOUTUBE  */
+/* _________________________________________ */
+
+/* la x */
+
+.close-btn {
+    margin-top: 0;
+    z-index: 99999999999;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 30px;
+    right: 60px;
+    font-size: 3em;
+    font-family: monospace;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px black;
+    background: #12141c;
+    border-radius: 50%;
+    width: 50px;
+    text-align: center;
+}
+.close-btn:hover{
+    color:#eb4a4a;
+    transition: 0.5s;
+    background: #272b3b;
+}
+
+.description{
+    text-align: center;
+    width: 30%;
+    display: block;
+   
+    
+    margin-bottom: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+/* contenedor del video y descripcion lo mismo que el anterior de arriba */
 .youtube-video-container {
+    
     display: flex; 
-     flex-direction: row;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    border: 2px solid red;
+    justify-content: center; 
+    /* filter: blur(5px); */
 
     
     position: fixed;
@@ -55,6 +114,94 @@
 
 iframe {
     display: block;
-    margin-left: auto;
-    margin-right: ;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: 70px;
+    border-radius: 20px;
+    height: 80%;
+    width: 70%;
+
+}
+
+
+/* description */
+
+.gallery_item{
+    grid-column-start: span 1;
+    grid-row-start: span 4;
+    background: #12141c;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    height: 95vh;
+}
+
+/*DEMO Y REPO DE CADA IMAGEN*/
+.subtitulo {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.subtitulo a {
+	color: var(--main-color);
+}
+
+.subtitulo a:hover {
+	color: var(--text-color);
+	transition: .5s;
+}
+/*FIN DEMO Y REPO*/
+
+
+/*responsive*/
+
+@media (max-width: 1325px){
+    
+}
+@media (max-width: 970px){
+    .youtube-video-container {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .description{
+        width: 100%;
+        height: 10%;
+        top: 0;
+    }
+    iframe{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:0px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    height: 35%;
+    }
+}
+
+@media (max-width: 900px){
+    iframe{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top:0px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        height: 30%;
+        }
+}
+@media (max-width: 830px){
+    iframe{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top:0px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        height: 25%;
+        }
 }
