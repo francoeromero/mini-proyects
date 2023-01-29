@@ -21,11 +21,12 @@
     display: grid;
     /* justify-content: center;
     align-items: center; */
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 5px;
     min-height: 100vh;
     width: 80%;
+    
 }
 
 /* contenedor del video de youtube y la descripcion */
