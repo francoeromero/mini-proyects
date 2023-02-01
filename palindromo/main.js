@@ -15,5 +15,3 @@ function palindromo() {
   }
 
 
-//   let resultado = palindromo("eye");
-//   document.getElementById("resultado").innerHTML = resultado;
